@@ -2,10 +2,12 @@ import React, { Component } from "react";
 
 export default class DisplayNumber extends Component {
   render() {
+    // console.log(this.props);
+
     return (
       <div>
         <h1>Display Number</h1>
-        <input type="text" value="0" readOnly></input>
+        <input type="text" value={this.props.number} readOnly></input>
       </div>
     );
   }
